@@ -4,3 +4,6 @@
 2) It is important to do so because having a foxed size will alter how pages look on different device screens. 
 
 3) No AI code. 
+
+#Issues:
+I coudl nto figure out how to have the website be different on a mobile view. The grid does change to the appropiate format when I change widow size on laptop. I think it has to do with the paramater of media. 
