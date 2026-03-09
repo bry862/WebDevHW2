@@ -1,0 +1,118 @@
+#title { 
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+body{
+   margin: 0px;
+    padding-bottom: 20px;
+}
+
+main{ 
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+
+
+}
+
+.navegationBar ul{
+    list-style-type: none;
+    background-color: bisque;
+    padding: 0px;
+    overflow: hidden;
+
+  
+    
+}
+
+.navegationBar a{
+    color: rgb(124, 31, 31);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 15px;
+}
+
+.navegationBar a:hover{
+    background-color: rgb(96, 84, 72);
+    color: rgb(157, 154, 150);
+}
+
+.navegationBar li{
+    float: left;
+}
+
+td,th{ 
+    padding: 10px;
+    border: 1px solid black;
+}
+
+
+/* 
+Here we will see a specificty conflict. There is a list item 
+that will not be green, because that list item has a more specific 
+selector type, a class. 
+*/
+li{ 
+    color: green;
+}
+
+#mainTable { 
+    border: 2px solid black;
+}
+
+.SpecialExperience { 
+    color: blueviolet;
+}
+
+.theImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+    border-radius: 20px;
+    
+}
+/*  */
+
+.ImageAndText{
+    display: flex;
+    
+}
+#img{
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* .ImageText{
+    margin: 10px;
+} */
+/*  */
+
+.gridShowCase{
+    background-color:  rgb(124, 31, 31);
+    display: grid;
+    padding: 20px;
+   
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    grid-template-columns: 400px 400px auto;
+}
+
+#griditem {
+    background-color: white;
+    align-items: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px){
+    .gridShowCase{
+        grid-template-columns: 1fr;
+        
+    }
+}
